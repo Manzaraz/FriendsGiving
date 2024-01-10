@@ -13,6 +13,7 @@
 		619904C62B4E4B6F00476D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619904C52B4E4B6F00476D92 /* Preview Assets.xcassets */; };
 		619904CE2B4E4D9200476D92 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904CD2B4E4D9200476D92 /* Friend.swift */; };
 		619904D02B4E4E6700476D92 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904CF2B4E4E6700476D92 /* FriendsViewModel.swift */; };
+		619904D22B4E508900476D92 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904D12B4E508900476D92 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		619904CC2B4E4BE700476D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		619904CD2B4E4D9200476D92 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		619904CF2B4E4E6700476D92 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		619904D12B4E508900476D92 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				619904CD2B4E4D9200476D92 /* Friend.swift */,
 				619904CF2B4E4E6700476D92 /* FriendsViewModel.swift */,
 				619904C02B4E4B6E00476D92 /* ListView.swift */,
+				619904D12B4E508900476D92 /* DetailView.swift */,
 				619904C22B4E4B6F00476D92 /* Assets.xcassets */,
 				619904C42B4E4B6F00476D92 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 				619904D02B4E4E6700476D92 /* FriendsViewModel.swift in Sources */,
 				619904CE2B4E4D9200476D92 /* Friend.swift in Sources */,
 				619904C12B4E4B6E00476D92 /* ListView.swift in Sources */,
+				619904D22B4E508900476D92 /* DetailView.swift in Sources */,
 				619904BF2B4E4B6E00476D92 /* FriendsGivingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

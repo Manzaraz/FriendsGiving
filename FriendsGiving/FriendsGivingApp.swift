@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct FriendsGivingApp: App {
-    @StateObject var friendsVM = FriendsViewModel()
+    @StateObject var friendsVM = FriendsViewModel() // first I initialize this object 
     
     var body: some Scene {
         WindowGroup {
             ListView()
-                .environmentObject(friendsVM)
+                .environmentObject(friendsVM) 
         }
     }
 }
