@@ -18,14 +18,16 @@ struct ListView: View {
                     NavigationLink {
                         DetailView(friend: friend)
                     } label: {
-                        VStack {
+                        VStack (alignment: .leading) {
                             Text(friend.name)
                                 .font(.title2)
                             Text(friend.bringing)
                                 .font(.callout)
                         }
                     }
-                }                
+                }
+                .onDelete(perform: friendsVM.deleteFriend)
+                .onMove(perform: friendsVM.moveFriend)
             }
             .listStyle(.plain)
             .navigationTitle("Friends")
