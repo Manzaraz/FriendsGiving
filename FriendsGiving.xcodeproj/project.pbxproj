@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		619904BF2B4E4B6E00476D92 /* FriendsGivingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904BE2B4E4B6E00476D92 /* FriendsGivingApp.swift */; };
-		619904C12B4E4B6E00476D92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904C02B4E4B6E00476D92 /* ContentView.swift */; };
+		619904C12B4E4B6E00476D92 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619904C02B4E4B6E00476D92 /* ListView.swift */; };
 		619904C32B4E4B6F00476D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619904C22B4E4B6F00476D92 /* Assets.xcassets */; };
 		619904C62B4E4B6F00476D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619904C52B4E4B6F00476D92 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,9 +16,10 @@
 /* Begin PBXFileReference section */
 		619904BB2B4E4B6E00476D92 /* FriendsGiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsGiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619904BE2B4E4B6E00476D92 /* FriendsGivingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsGivingApp.swift; sourceTree = "<group>"; };
-		619904C02B4E4B6E00476D92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		619904C02B4E4B6E00476D92 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		619904C22B4E4B6F00476D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619904C52B4E4B6F00476D92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		619904CC2B4E4BE700476D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,9 @@
 		619904BD2B4E4B6E00476D92 /* FriendsGiving */ = {
 			isa = PBXGroup;
 			children = (
+				619904CC2B4E4BE700476D92 /* Info.plist */,
 				619904BE2B4E4B6E00476D92 /* FriendsGivingApp.swift */,
-				619904C02B4E4B6E00476D92 /* ContentView.swift */,
+				619904C02B4E4B6E00476D92 /* ListView.swift */,
 				619904C22B4E4B6F00476D92 /* Assets.xcassets */,
 				619904C42B4E4B6F00476D92 /* Preview Content */,
 			);
@@ -137,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619904C12B4E4B6E00476D92 /* ContentView.swift in Sources */,
+				619904C12B4E4B6E00476D92 /* ListView.swift in Sources */,
 				619904BF2B4E4B6E00476D92 /* FriendsGivingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +277,10 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Friends Giving";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,6 +290,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iManzi.com.FriendsGiving;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,9 +311,10 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Friends Giving";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +324,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iManzi.com.FriendsGiving;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
