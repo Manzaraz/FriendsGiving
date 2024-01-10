@@ -24,13 +24,8 @@ struct ListView: View {
                             Text(friend.bringing)
                                 .font(.callout)
                         }
-                        
                     }
-                    
-                    
-                }
-                
-                
+                }                
             }
             .listStyle(.plain)
             .navigationTitle("Friends")

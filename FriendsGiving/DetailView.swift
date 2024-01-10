@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
+    @EnvironmentObject var friendsVM: FriendsViewModel
     @Environment(\.dismiss) private var dismiss
     @State var friend: Friend
     
@@ -44,12 +45,13 @@ struct DetailView: View {
             
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Save") {
-                    // TODO: Add a save data function
+                    friendsVM.saveFriend(friend: friend)
                     dismiss()
                 }
             }
         }
         .navigationBarBackButtonHidden()
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
