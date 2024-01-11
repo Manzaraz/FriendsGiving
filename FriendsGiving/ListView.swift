@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 struct ListView: View {
     @EnvironmentObject var friendsVM: FriendsViewModel
     @State private var sheetIsPresented = false
+    @State private var audioPlayer: AVAudioPlayer!
     
     var body: some View {
         NavigationStack {
@@ -50,6 +52,24 @@ struct ListView: View {
                 DetailView(friend: Friend())
             }
         }
+        .onAppear {
+            playSound(soundName: "gobble")
+        }
+    }
+    
+    func playSound(soundName: String) {
+        guard let soundFile = NSDataAsset(name: soundName) else {
+            print("🔇 ERROR: Could not create a sound file from \(soundName)")
+            return
+        }
+        
+        do {
+            audioPlayer = try AVAudioPlayer(data: soundFile.data)
+            audioPlayer.play()
+        } catch  {
+            print("🔇 ERROR:  \(error.localizedDescription) creating audioPlayer")
+        }
+        
     }
 }
 

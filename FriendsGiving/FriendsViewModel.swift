@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class FriendsViewModel: ObservableObject {
     @Published var friends: [Friend] = []
     
